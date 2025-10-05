@@ -1,0 +1,92 @@
+{
+  "name": "Pure functions",
+  "id": "ffp_pure",
+  "children": [
+    {
+      "id": "ffp_pure01",
+      "name": "Ex. 1 (example)",
+      "guide": "./c01.md",
+      "py": "./c01.py",
+      "isExample": true
+    },
+    {
+      "id": "ffp_pure02",
+      "name": "Ex. 2 (example)",
+      "guide": "./c02.md",
+      "py": "./c02.py",
+      "isExample": true
+    },
+    {
+      "id": "ffp_pure03",
+      "name": "Ex. 3 (task)",
+      "guide": "./c03.md",
+      "py": "./c03.py",
+      "tests": [
+        {
+          "in": [],
+          "out": [
+            {
+              "pattern": "\\[\\[1, 32\\], \\[0, 1\\]\\]"
+            },
+            {
+              "typ": "s+",
+              "statement": "(mat := [[0, 1], [1, 0]], determinant([[2, 4], [6, 2]]), mat)",
+              "pattern": "\\(\\[\\[0, 1\\], \\[1, 0\\]\\], -20, \\[\\[0, 1\\], \\[1, 0\\]\\]\\)"
+            },
+            {
+              "typ": "s+",
+              "statement": "(mat := [[7, 1], [5, 25]], identity(), mat)",
+              "pattern": "\\(\\[\\[7, 1\\], \\[5, 25\\]\\], \\[\\[1, 0\\], \\[0, 1\\]\\], \\[\\[7, 1\\], \\[5, 25\\]\\]\\)"
+            },
+            {
+              "typ": "s+",
+              "statement": "(mat := [[64, 23], [74, 23]], square([[12, 24], [2345, 654]]), mat)",
+              "pattern": "\\(\\[\\[64, 23\\], \\[74, 23\\]\\], \\[\\[56424, 15984\\], \\[1561770, 483996\\]\\], \\[\\[64, 23\\], \\[74, 23\\]\\]\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ffp_pure04",
+      "name": "Ex. 4 (example)",
+      "guide": "./c04.md",
+      "py": "./c04.py",
+      "isExample": true
+    },
+    {
+      "id": "ffp_pure05",
+      "name": "Ex. 5 (task)",
+      "guide": "./c05.md",
+      "py": "./c05.py",
+      "tests": [
+        {
+          "in": [],
+          "out": [
+            {"pattern": "True\\nFalse\\nTrue"},
+            {
+              "typ": "s+",
+              "statement": "(mat := [[0, 1], [1, 0]], transpose([[2, 4], [6, 2]]), mat)[1:]",
+              "pattern": "\\(\\[\\[2, 6\\], \\[4, 2\\]\\], \\[\\[0, 1\\], \\[1, 0\\]\\]\\)"
+            },
+            {
+              "typ": "s+",
+              "statement": "(mat := [[7, 1], [5, 25]], identity(), mat)[1:]",
+              "pattern": "\\(\\[\\[1, 0\\], \\[0, 1\\]\\], \\[\\[7, 1\\], \\[5, 25\\]\\]\\)"
+            },
+            {
+              "typ": "s+",
+              "statement": "(mat := [[65, 234], [75, 24601]], is_orthogonal([[3, 0], [0, 3]])[0], is_orthogonal([[3, 0], [0, 3]])[0], mat)[1:]",
+              "pattern": "\\(False, False, \\[\\[65, 234\\], \\[75, 24601\\]\\]\\)"
+            },
+            {
+              "typ": "s+",
+              "statement": "is_orthogonal(identity())",
+              "pattern": "\\(True, \\[\\[1, 0\\], \\[0, 1\\]\\]\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

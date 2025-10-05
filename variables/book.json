@@ -1,0 +1,66 @@
+{
+  "name": "Variables",
+  "id": "ffp_var",
+  "children": [
+    {
+      "id": "ffp_var01",
+      "name": "Ex. 1 (example)",
+      "guide": "./c01.md",
+      "py": "./c01.py",
+      "isExample": true
+    },
+    {
+      "id": "ffp_var02",
+      "name": "Ex. 2 (task)",
+      "guide": "./c02.md",
+      "py": "./c02.py",
+      "tests": [
+        {
+          "in": [4, 5],
+          "out": [
+            {"typ": "c+", "pattern": "radius \\*\\* 3 \\* 4 \\* 3\\.14159265 / 3", "ignore": "w"},
+            {
+              "typ": "c+",
+              "pattern": "calculate_sphere_volume\\(radius - 0\\.5\\) \\+ \\(radius - 0\\.5\\) \\*\\* 2 \\* 3\\.14159265 \\* \\(height - radius \\)",
+              "ignore": "w"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ffp_var03",
+      "name": "Ex. 3 (example)",
+      "guide": "./c03.md",
+      "py": "./c03.py",
+      "isExample": true,
+      "additionalFiles": [
+        {
+          "filename": "fp_let.py"
+        }
+      ]
+    },
+    {
+      "id": "ffp_var04",
+      "name": "Ex. 4 (task)",
+      "guide": "./c04.md",
+      "py": "./c04.py",
+      "additionalFiles": [
+        {
+          "filename": "fp_let.py"
+        }
+      ],
+      "tests": [
+        {
+          "in": [4, 5],
+          "out": [
+            {"typ": "c+", "pattern": "let\\(pi=3\\.14159265\\)", "ignore": "w"},
+            {"typ": "c+", "pattern": "let\\(.*internal_radius=radius-0\\.5.*\\)", "ignore": "w"},
+            {"typ": "c+", "pattern": "let\\(.*cylinder_height=height-radius.*\\)", "ignore": "w"},
+            {"typ": "c+", "pattern": "let\\(.*sphere_volume=calculate_sphere_volume\\(internal_radius\\).*\\)", "ignore": "w"},
+            {"typ": "c+", "pattern": "let\\(.*cylinder_volume=internal_radius\\*\\*2\\*pi\\*cylinder_height.*\\)", "ignore": "w"}
+          ]
+        }
+      ]
+    }
+  ]
+}

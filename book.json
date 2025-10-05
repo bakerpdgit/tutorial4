@@ -1,0 +1,73 @@
+{
+  "name": "Further functional programming",
+  "id": "ffp",
+  "children": [
+    {
+      "id": "ffp_pure",
+      "name": "Pure functions",
+      "bookLink": "./pure_functions/book.json"
+    },
+    {
+      "id": "ffp_var",
+      "name": "Variables",
+      "bookLink": "./variables/book.json"
+    },
+    {
+      "id": "ffp_sf",
+      "name": "Standard functions",
+      "bookLink": "./standard_functions/book.json"
+    },
+    {
+      "id": "ffp_proof",
+      "name": "Interlude: proof",
+      "bookLink": "./interlude_proof/book.json"
+    },
+    {
+      "id": "ffp_ind",
+      "name": "Interlude: proof by induction",
+      "bookLink": "./interlude_induction/book.json"
+    },
+    {
+      "id": "ffp_lst",
+      "name": "Lists",
+      "bookLink": "./lists/book.json"
+    },
+    {
+      "id": "ffp_praca",
+      "name": "Practice exercises set A",
+      "bookLink": "./practice_exercises_a/book.json"
+    }
+  ],
+  "planned": [
+    {
+      "name": "Map and fold"
+    },
+    {
+      "name": "Function types"
+    },
+    {
+      "name": "More inductive types"
+    },
+    {
+      "name": "General folds"
+    },
+    {
+      "name": "Practice exercises set B"
+    },
+    {
+      "name": "Interlude: monoids"
+    },
+    {
+      "name": "Monads"
+    },
+    {
+      "name": "The state monad"
+    },
+    {
+      "name": "Church encoding"
+    },
+    {
+      "name": "Data as functions"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "name": "Standard Functions",
+  "id": "ffp_sf",
+  "children": [
+    {
+      "id": "ffp_sf01",
+      "name": "Ex. 1 (example)",
+      "guide": "./c01.md",
+      "py": "./c01.py",
+      "isExample": true,
+      "additionalFiles": [
+        {
+          "filename": "./fp_utils.py"
+        }
+      ]
+    },
+    {
+      "id": "ffp_sf02",
+      "name": "Ex. 2 (example)",
+      "guide": "./c02.md",
+      "py": "./c02.py",
+      "isExample": true,
+      "additionalFiles": [
+        {
+          "filename": "fp_utils.py"
+        }
+      ]
+    },
+    {
+      "id": "ffp_sf03",
+      "name": "Ex. 3 (task)",
+      "guide": "./c03.md",
+      "py": "./c03.py",
+      "additionalFiles": [
+        {
+          "filename": "fp_utils.py"
+        }
+      ],
+      "tests": [
+        {
+          "in": [],
+          "out": [
+            {"typ": "c-", "pattern": "lambda|def"},
+            {"typ": "c-", "pattern": "(succ\\|compose\\|){29}", "ignore": "w"},
+            {
+              "typ": "s+",
+              "statement": "plus_four(6)",
+              "pattern": "10"
+            },
+            {
+              "typ": "s+",
+              "statement": "plus_four(-2)",
+              "pattern": "2"
+            },
+            {
+              "typ": "s+",
+              "statement": "second_of_two(700)(846)",
+              "pattern": "846"
+            },
+            {
+              "typ": "s+",
+              "statement": "second_of_two(846)(700)",
+              "pattern": "700"
+            },
+            {
+              "typ": "s+",
+              "statement": "plus_thirty(846)",
+              "pattern": "876"
+            },
+            {
+              "typ": "s+",
+              "statement": "plus_thirty(1792)",
+              "pattern": "1822"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ffp_sf04",
+      "name": "Ex. 4 (task)",
+      "guide": "./c04.md",
+      "py": "./c04.py",
+      "additionalFiles": [
+        {
+          "filename": "fp_utils.py"
+        }
+      ],
+      "tests": [
+        {
+          "in": [],
+          "out": [
+            {"typ": "c-", "pattern": "lambda|def"},
+            {
+              "typ": "s+",
+              "statement": "plus(4)(6)",
+              "pattern": "10"
+            },
+            {
+              "typ": "s+",
+              "statement": "plus(2)(108)",
+              "pattern": "110"
+            },
+            {
+              "typ": "s+",
+              "statement": "plus(700)(846)",
+              "pattern": "1546"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ffp_sf05",
+      "name": "Ex. 5 (example)",
+      "guide": "./c05.md",
+      "py": "./c05.py",
+      "isExample": true,
+      "additionalFiles": [
+        {
+          "filename": "fp_utils.py"
+        }
+      ]
+    },
+    {
+      "id": "ffp_sf06",
+      "name": "Ex. 6 (task)",
+      "guide": "./c06.md",
+      "py": "./c06.py",
+      "additionalFiles": [
+        {
+          "filename": "fp_utils.py"
+        }
+      ],
+      "tests": [
+        {
+          "in": [],
+          "out": [
+            {"typ": "c-", "pattern": "lambda|def"},
+            {"typ": "c-", "pattern": "(const(.|\\n)+){15}", "ignore": "w"},
+            {
+              "typ": "s+",
+              "statement": "second_of_four(18)(23)(180)(1171)",
+              "pattern": "23"
+            },
+            {
+              "typ": "s+",
+              "statement": "second_of_four(655)(351)(24)(2048)",
+              "pattern": "351"
+            },
+            {
+              "typ": "s+",
+              "statement": "eighth_of_sixteen(2)(3)(5)(7)(11)(13)(17)(19)(23)(29)(31)(37)(41)(43)(47)(53)",
+              "pattern": "19"
+            },
+            {
+              "typ": "s+",
+              "statement": "eighth_of_sixteen(1)(2)(3)(5)(8)(13)(21)(34)(55)(89)(144)(233)(377)(610)(987)(1597)",
+              "pattern": "34"
+            },
+            {
+              "typ": "s+",
+              "statement": "apply((lambda x: x**2), 4)",
+              "pattern": "16"
+            },
+            {
+              "typ": "s+",
+              "statement": "apply((lambda x: 3**x), 5)",
+              "pattern": "243"
+            },
+            {
+              "typ": "s+",
+              "statement": "foo((lambda x, y: x**2 + y**3 + x*y), 3)(9)",
+              "pattern": "765"
+            },
+            {
+              "typ": "s+",
+              "statement": "foo((lambda x, y: 1 + x + y), 245)(8753)",
+              "pattern": "8999"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

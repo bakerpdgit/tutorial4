@@ -1,0 +1,153 @@
+{
+  "name": "Practise exercises set A",
+  "id": "ffp_praca",
+  "children": [
+    {
+      "id": "ffp_praca01",
+      "name": "Ex. 1 (task)",
+      "guide": "./c01.md",
+      "py": "./c01.py",
+      "additionalFiles": [
+        {"filename": "fp_utils.py"},
+        {"filename": "fp_let.py"}
+      ],
+      "tests": [{
+        "in": [],
+        "out": [
+          {"pattern": "The student got 95% in English, 76% in history, and 74% in physics\\n74\\n\\[1, 1, 1, 1, 2, 3, 5, 8\\]"},
+          {
+            "typ": "s+",
+            "statement": "(foo(1, 2, 3), foo(4, 5, 6))",
+            "pattern": "\\(\\(7, 21, 49\\), \\(34, 204, 45435424\\)\\)"
+          },
+          {
+            "typ": "s+",
+            "statement": "pythag(3, 4)",
+            "pattern": "5\\.0"
+          },
+          {
+            "typ": "s+",
+            "statement": "assemble_report('one', 2, 3, 5, 10)",
+            "pattern": "\\('one got 2% in English, 3% in history, and 6% in physics', 6\\)"
+          },
+          {
+            "typ": "s+",
+            "statement": "two_to_the(4)",
+            "pattern": "16"
+          },
+          {
+            "typ": "s+",
+            "statement": "repeat_first_element([])",
+            "pattern": "\\[\\]"
+          },
+          {
+            "typ": "s+",
+            "statement": "repeat_first_element([1, 2, 3])",
+            "pattern": "\\[1, 1, 2, 3\\]"
+          },
+          {
+            "typ": "s+",
+            "statement": "drop(0)([1, 2, 3])",
+            "pattern": "\\[1, 2, 3\\]"
+          },
+          {
+            "typ": "s+",
+            "statement": "drop(3)([1, 2, 3])",
+            "pattern": "\\[\\]"
+          }
+        ]
+      }]
+    },
+    {
+      "id": "ffp_praca02",
+      "name": "Ex. 2 (task)",
+      "guide": "./c02.md",
+      "py": "./c02.py",
+      "additionalFiles": [
+        {"filename": "fp_utils.py"},
+        {"filename": "fp_let.py"}
+      ],
+      "tests": [{
+        "in": [],
+        "out": [
+          {"pattern": "The student got 95% in English, 76% in history, and 74% in physics\\n74\\n\\[1, 1, 1, 1, 2, 3, 5, 8\\]"},
+          {"typ": "c+", "pattern": "let\\(.*a=a\\+b\\*c.*\\)", "ignore": "w"},
+          {"typ": "c+", "pattern": "let\\(.*b=a\\*c.*\\)", "ignore": "w"},
+          {"typ": "c+", "pattern": "let\\(.*c=a\\*\\*b.*\\)", "ignore": "w"},
+          {"typ": "c+", "pattern": "let\\(.*squared_distance=x\\*\\*2\\+y\\*\\*2.*\\)", "ignore": "w"},
+          {"typ": "c+", "pattern": "let\\(.*int\\(physics_exam_grade\\*0\\.8\\+physics_practical_grade\\*0\\.2\\).*\\)", "ignore": "w"},
+          {"typ": "c+", "pattern": "let\\(.*result=name\\+['\"]got['\"]\\+str\\(english_grade\\)\\+\"%inEnglish,['\"].*\\)", "ignore": "w"},
+          {"typ": "c+", "pattern": "let\\(.*result=result\\+str\\(history_grade\\)\\+\"%inhistory,['\"].*\\)", "ignore": "w"},
+          {"typ": "c+", "pattern": "let\\(.*result=result\\+['\"]and['\"]\\+str\\(physics_total_grade\\)\\+\"%inphysics['\"].*\\)", "ignore": "w"}
+        ]
+      }]
+    },
+    {
+      "id": "ffp_praca03",
+      "name": "Ex. 3 (task)",
+      "guide": "./c03.md",
+      "py": "./c03.py",
+      "additionalFiles": [
+        {"filename": "fp_utils.py"},
+        {"filename": "fp_let.py"}
+      ],
+      "tests": [{
+        "in": [],
+        "out": [
+          {
+            "typ": "s+",
+            "statement": "drop(0)(1 ** 2 ** 3 ** nil)",
+            "pattern": "flist\\(\\[1, 2, 3\\]\\)"
+          },
+          {
+            "typ": "s+",
+            "statement": "drop(3)(1 ** 2 ** 3 ** nil)",
+            "pattern": "flist\\(\\[\\]\\)"
+          },
+          {
+            "typ": "s+",
+            "statement": "tail(1 ** 2 ** 3 ** nil)",
+            "pattern": "flist\\(\\[2, 3\\]\\)"
+          },
+          {
+            "typ": "s+",
+            "statement": "repeat_first_element(1 ** 2 ** 3 ** nil)",
+            "pattern": "flist\\(\\[1, 1, 2, 3\\]\\)"
+          },
+          {
+            "typ": "s+",
+            "statement": "repeat_first_element(nil)",
+            "pattern": "flist\\(\\[\\]\\)"
+          }
+        ]
+      }]
+    },
+    {
+      "id": "ffp_praca04",
+      "name": "Ex. 4 (task)",
+      "guide": "./c04.md",
+      "py": "./c04.py",
+      "additionalFiles": [
+        {"filename": "fp_utils.py"},
+        {"filename": "fp_let.py"}
+      ],
+      "tests": [{
+        "in": [],
+        "out": [
+          {
+            "typ": "c+",
+            "ignore": "w",
+            "pattern": "drop=nfold_compose\\(tail\\)"
+          }
+        ]
+      }]
+    },
+    {
+      "id": "ffp_praca05",
+      "name": "Ex. 5 (task)",
+      "guide": "./c05.md",
+      "py": "./c05_reverse.md",
+      "typ": "parsons"
+    }
+  ]
+}

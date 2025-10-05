@@ -1,0 +1,58 @@
+{
+  "name": "Lists",
+  "id": "ffp_lst",
+  "children": [
+    {
+      "id": "ffp_lst01",
+      "name": "Ex. 1 (example)",
+      "guide": "./c01.md",
+      "py": "./c01.py",
+      "isExample": true,
+      "additionalFiles": [
+        {
+          "filename": "fp_utils.py"
+        }
+      ]
+    },
+    {
+      "id": "ffp_lst02",
+      "name": "Ex. 2 (example)",
+      "guide": "./c02.md",
+      "py": "./c02.py",
+      "isExample": true,
+      "additionalFiles": [
+        {
+          "filename": "fp_utils.py"
+        }
+      ]
+    },
+    {
+      "id": "ffp_lst03",
+      "name": "Ex. 3 (task)",
+      "guide": "./c03.md",
+      "py": "./c03.py",
+      "additionalFiles": [
+        {
+          "filename": "fp_utils.py"
+        }
+      ],
+      "tests": [
+        {
+          "in": [],
+          "out": [
+            {
+              "typ": "s+",
+              "statement": "append(1 ** 2 ** nil, 3)",
+              "pattern": "flist\\(\\[1, 2, 3\\]\\)"
+            },
+            {
+              "typ": "s+",
+              "statement": "append(nil, 4)",
+              "pattern": "flist\\(\\[4\\]\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
