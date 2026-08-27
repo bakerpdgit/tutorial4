@@ -31,7 +31,7 @@
       "isExample": true
     },
     {
-      "id": "ffp_proof05 ",
+      "id": "ffp_proof05",
       "name": "Ex. 5 (task)",
       "guide": "./c05.md",
       "py": "./c05_reverse.md",
